@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formation javascript</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="javascript/javascript.js"></script>
+    <script src="javascript/jquery-1.6.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <nav>
+        <div id="menu-secondaire">
+            <a href="index.html">FACECOOL</a>
+            <form method="GET" action="annuaire.php">
+                <div>
+                    <input type="search" id="search" name="recherche" placeholder="Trouver vos amis">
+                </div>
+                <button>search</button>
+            </form>
+        </div>
+        <!--<div id="toggle-menu">Menu</div>-->
+        <ul class="menu">
+            <!--<li><a href="#">FACECOOL</a></li>-->
+            <!--<li><a href="#">ANNUAIRE</a></li>-->
+            <li><a href="creerprofil.html">CREER NOUVEAUX PROFIL</a></li>
+            <li><a href="annuaire.html">LIST DES AMIS ANNUAIRE</a></li>
+        </ul>
+    </nav>
+
+    <div id="container-formulaire">
+    <h1>FaceCool Inscription</h1>
+    <p>C’est gratuit (mais pour combien de temps ...)</p>
+   <!--<p> <a href="profil.php"> Profil </a> </p>
+    <p></p> <a href="listcontact.html"> Liste</a></p>
+            <form method="POST" action="profil.php">-->
+                    <p>
+                    <p><label for="nom">Nom :<label></p>
+                    <input type="text" name="nom" id="nom" placeholder="votre nom s'il vous plait" required>
+                    </p>
+                    <p>
+                    <p><label for="prenom">Prenom :<label></p>
+                     <input type="text" name="prenom" id="prenom" placeholder="votre prenom s'il vous plait" required>
+                    </p>
+                    <p>
+                    <input type="password" name="pass" placeholder="votre mot de passe s'il vous plait" required>
+                    </p>
+                    <p>
+                            <input type="password" name="conpass" placeholder="confirmez s'il vous plait" required>
+                    </p>
+                    <p>
+                    <input type="date" name="date" required>
+                    </p>
+                    </p>
+                    <input type="text" name="photo" placeholder="le lien de votre photo s'il vous plait" required>
+                    </p>
+                    <div>
+                            <h3>Genre</h3>
+                            <input type="radio" id="homme" name="genre">
+                            <label for="homme">homme</label>
+                            <input type="radio" id="femme" name="genre">
+                            <label for="femme">femme</label>
+                            <input type="radio" id="autre" name="genre">
+                            <label for="autre">autre</label>
+
+                    </div>
+                    <div>
+                            <h3>Situation amoureuse</h3>
+                            <input type="radio" id="celibataire" name="etat">
+                            <label for="celibataire">celibataire</label>
+                            <input type="radio" id="marié" name="etat">
+                            <label for="marié">marié</label>
+                            <input type="radio" id="autre" name="etat">
+                            <label for="autre">autre</label>
+
+                    </div>
+                    <div>
+                            <h3>Musique</h3>
+                            <input type="checkbox" name="Rock"> Rock
+
+                            <input type="checkbox" name="pop"> Pop
+                       
+                            <input type="checkbox" name="Jazz"> Jazz
+
+                            <input type="checkbox" name="Techno"> Techno
+
+                    </div>
+                    <div>
+                            <h3>Hobbies</h3>
+                            <input type="checkbox" name="Hobbies1"> Camping
+
+                            <input type="checkbox" name="Hobbies2"> cinema
+                          
+                            <input type="checkbox" name="Hobbies3"> lecture
+
+                            <input type="checkbox" name="Hobbies4"> voyage
+                            <br>
+                    </div>
+                    <p>
+                    <input type="submit" name="GO">
+                    <p></p>
+            </form>
+
+        </div>
+
+
+
+
+
+
+</body>
+
+</html>

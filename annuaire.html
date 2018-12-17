@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formation javascript</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="javascript/javascript.js"></script>
+    <script src="javascript/jquery-1.6.3.min.js"></script>
+</head>
+
+<body>
+
+   <!-- <?php
+        // recupere coonnexion.php
+        require "connexion.php";
+
+        // Je cree ma connexion
+        $connexion = new Connexion();
+
+        $pattern = "";
+        if($_GET["recherche"] != null){
+            $pattern = $_GET["recherche"];
+        }
+        $listePersonne = $connexion->getSelectPersonneNomPrenomLike( $pattern);
+    ?>-->
+  
+    <nav>
+        <div id="menu-secondaire">
+            <a href="index.html">FACECOOL</a>
+            <form method="GET" action="annuaire.php">
+                <div>
+                    <input type="search" id="search" name="recherche" placeholder="Trouver vos amis">
+                </div>
+                <button>search</button>
+            </form>
+        </div>
+        <!--<div id="toggle-menu">Menu</div>-->
+        <ul class="menu">
+            <!--<li><a href="#">FACECOOL</a></li>-->
+            <!--<li><a href="#">ANNUAIRE</a></li>-->
+            <li><a href="creerprofil.html">CREER NOUVEAUX PROFIL</a></li>
+            <li><a href="annuaire.html">LIST DES AMIS ANNUAIRE</a></li>
+        </ul>
+    </nav>
+    <div id="container-principal">
+       <!-- <?php foreach($listePersonne as $personne){
+            echo '<article class="container-list-amis">';
+            echo '<div id="image-amis" class="flex-item2">';
+            echo '<img src='.$personne->URL_Photo.' />';
+            echo '</div>';
+            echo ' <div>';
+            echo '<div class="donees">'.$personne->Nom.'</div>';
+            echo ' <div class="donees">'.$personne->Prenom.'</div>';
+            echo ' </div>';
+            echo '<button>PROFIL</button>';
+            echo ' </article>';
+        }
+        ?>-->
+
+        <div id="container-principal">
+            <article class="container-list-amis">
+                     <div id="image-amis" class="flex-item2">
+                         <img src="imgs/amis1.png" />
+                     </div>
+                     <h2>bla bla bla</h2>
+                     <div>
+                         <div class="donees">NOM : </div>
+                         <div class="donees">PRENOM : </div>
+                     </div>
+                     <button>PROFIL</button>
+                 </article>
+         
+                 <article class="container-list-amis">
+                    <div id="image-amis" class="flex-item2">
+                        <img src="imgs/amis1.png" />
+                    </div>
+                    <h2>bla bla </h2>
+                    <div>
+                        <div class="donees">NOM : </div>
+                        <div class="donees">PRENOM : </div>
+                    </div>
+                    <button>PROFIL</button>
+                </article>
+         
+           <article class="container-list-amis">
+                     <div id="image-amis" class="flex-item2">
+                         <img src="imgs/amis1.png" />
+                     </div>
+                     <h2>bla bla bla </h2>
+                     <div>
+                         <div class="donees">NOM : </div>
+                         <div class="donees">PRENOM : </div>
+                     </div>
+                     <button>PROFIL</button>
+                 </article>
+         
+             </div>
+
+    </div>
+
+</body>
+</html>
