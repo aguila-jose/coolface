@@ -45,21 +45,21 @@ body{
         align-items: center;
     }
 
-        input{
+    #search{
             width: 500px;
-            height: 50px;
+            height: 70px;
             border-radius: 3px; 
             border:3px solid#f73d04; 
             
                   
         }
 
-        button{
+        #menu-secondaire #button-search{
             font-weight: bold;
             font-size: 1em;
             padding: 10px;
             text-transform: uppercase;
-            height: 50px;
+            height: 70px;
             border-radius: 1px;
             margin-left: 10px;
             color: #fff;
@@ -96,10 +96,6 @@ body{
         font-size: 1em;
     }
 
-    a:hover{
-        background-color:#f73d04;
-    }
-
     #toggle-menu{
         background-color: rgb(51, 97, 134);
         border-bottom: solid 1px rgb(180, 178, 178);
@@ -133,7 +129,6 @@ body{
  
     }
 
-
 .container-list-amis{
     background-color: #fcfbfa;
     margin-top: 20px;
@@ -143,11 +138,8 @@ body{
     width: 300px;
     height: 600px;
     display:inline-block;
-    margin: 20px;
-  
-    
+    margin: 20px;  
 }
-
 
 .container-list-amis h2{
  
@@ -157,20 +149,17 @@ body{
     border-bottom: solid 2px rgb(243, 59, 2);
     width: 250px;
     margin: auto;
-    margin-top: 20px;
-    
+    margin-top: 20px; 
     padding: 10px;
     font-size: 1.5em;
     
 }
 
-
 .container-list-amis p{
     padding: 30px;
     text-align: center;
     color: #8f4d0b;
-  
-    
+     
 }
 
 #image-amis img{
@@ -185,14 +174,12 @@ body{
 
 }
 
-
 .container-list-amis .flex-item2{
     width: 80%;
     height: 200px;
     background-color: rgb(129, 158, 211);
     border-bottom: solid 2px #c43d08;
-       
-  
+         
 }
 
 .container-list-amis button{
@@ -204,7 +191,6 @@ body{
     border-radius: 3px;
     border: solid 2px rgb(244, 244, 245);
 
-
 }
 
 
@@ -212,8 +198,7 @@ body{
 .container-profil{
     border: solid 2px #f73d04;
     box-shadow: -2px 5px 10px #383434;
-    background-color: antiquewhite;
-    display: flex;
+    background-color: rgb(73, 143, 190);
     width: 80%;
     height: 800px;
     margin: 10px auto;
@@ -227,7 +212,7 @@ body{
     border-bottom: solid 2px rgb(201, 71, 19);
     box-shadow: -2px 5px 30px #383434;
     width: 450px;
-height: 700px;
+    height: 700px;
     margin-top: 10px;
     margin-left: 15px;  
     z-index: 200;
@@ -265,14 +250,15 @@ height: 700px;
 }
 
 .donnes-perso{
-background-color: #fcfbfa;
-box-shadow: 7px 19px 27px #383434;
-width: 600px;
-height: 534px;
-display: inline-block;
-margin: 10px 10px;
-border-top: solid 2px rgb(201, 71, 19);
-z-index: 100;
+    background-color: #fcfbfa;
+    box-shadow: 7px 19px 27px #383434;
+    width: 600px;
+    height: 534px;
+    display: inline-block;
+    margin: 10px 10px;
+    border-bottom: solid 2px rgb(201, 71, 19);
+    z-index: 100;
+ 
 }
 
 .date-status{
@@ -283,11 +269,9 @@ z-index: 100;
     display: inline-block;
     margin: 10px 40px;
     border-bottom: solid 2px rgb(201, 71, 19);
+    border-bottom: solid 2px rgb(201, 71, 19);
     z-index: 100;
     }
-
-
-
 
 .container-img{
     width: 150px;
@@ -307,20 +291,177 @@ z-index: 100;
    
 }
 
-
 .container-profil img a:hover {
     background-color: #49f704;
 }
 
 
+
+#container-formulaire6{
+    background-color: rgb(73, 143, 190);
+    width: 30%;
+    padding:50px;
+    margin: 40px;
+    box-shadow: -2px 5px 10px #383434;
+    border: solid 2px rgb(236, 233, 232);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.container-list-amis3 {
+    background-color: #fcfbfa;
+    display: flex;
+    box-shadow: -2px 5px 10px #383434;
+    margin-left: 15px;
+    margin-right: 2px;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    margin: 10px;
+ 
+  
+
+}
+
+
+.mes-amis-profil{
+    background-color: #fcfbfa;
+    box-shadow: -2px 5px 10px #383434;
+    width: 200px;
+    height: 600px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+  
+}
+
 /*    FORMULAIRE CREER UN PROFIL  */
 
-#container-formulaire{
-    background-color: rgb(56, 116, 165);
-    width: 80%;
-    padding:50px;
-    margin: 50px auto;
+
+#container-flex-inscrip{
+    background-color: #c43d08;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 90%;
+    height: 1000px;;
     box-shadow: -2px 5px 10px #383434;
-    
-    border: solid 2px darkorange;
+    border: solid 2px rgb(243, 242, 241);
+}
+#container-formulaire{
+
+    background-color: rgb(73, 143, 190);
+    width: 30%;
+    padding:50px;
+    margin: 40px;
+    box-shadow: -2px 5px 10px #383434;
+    border: solid 2px rgb(243, 242, 241);
+}
+
+#envoyer-inscription{
+ 
+    width: 500px;
+    height: 70px;
+ 
+    border-radius: 3px;
+    border: solid 2px #c43d08;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(233, 224, 221);
+
+}
+
+
+#container-formulaire .Situation-amoureuse{
+    width: 1000px;
+    height: 100px;
+    background-color:  #c43d08;
+}
+
+
+
+#container-formulaire2{
+    background-color: rgb(73, 143, 190);
+    width: 30%;
+    padding:50px;
+    margin: 40px;
+    box-shadow: -2px 5px 10px #383434;
+    border: solid 2px rgb(236, 233, 232);
+}
+
+#container-flex-inscrip2{
+    background-color: #c43d08;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: -2px 5px 10px #383434;
+    border: solid 2px rgb(243, 242, 241);
+}
+
+
+/*SITUACION AMOUREAUSE*/
+
+#container-formulaire3{
+    background-color: rgb(73, 143, 190);
+    width: 40%;
+    height: 210px;;
+    padding:50px;
+    margin: 40px;
+    box-shadow: -2px 5px 10px #383434;
+    border: solid 2px rgb(236, 233, 232);
+}
+
+
+/*SITUACION MUSIQUES ET HOBBY*/
+
+#container-formulaire4{
+    background-color: rgb(73, 143, 190);
+    width: 40%;
+    height: 460px;
+    padding:50px;
+    margin: 40px;
+    box-shadow: -2px 5px 10px #383434;
+    border: solid 2px rgb(236, 233, 232);
+}
+
+
+#container-formulaire5{
+    background-color: rgb(73, 143, 190);
+    width: 30%;
+    padding:50px;
+    margin: 40px;
+    box-shadow: -2px 5px 10px #383434;
+    border: solid 2px rgb(236, 233, 232);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-list-amis {
+    background-color: #fcfbfa;
+    margin-top: 20px;
+    box-shadow: -2px 5px 10px #383434;
+    margin-left: 15px;
+    margin-right: 2px;
+    width: 300px;
+    height: 600px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.container-list-amis2{
+    background-color: #fcfbfa;
+    margin-top: 20px;
+    box-shadow: -2px 5px 10px #383434;
+    margin-left: 15px;
+    margin-right: 2px;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    margin: 20px;
+
 }
