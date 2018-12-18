@@ -1,5 +1,5 @@
 <?php
-/*
+
 require ('connexion.php');
 //$db = new Connexion("localhost","3306","minifacebook","phpmyadmin","digital2018");
 //$db2 = new Connexion("localhost","3306","adminMiniFacebook","phpmyadmin","digital2018");
@@ -9,7 +9,7 @@ $appliDB = new Connexion();
 
 //EXERCICE 3
 
-$appliDB->setHobby("Bateaux Voile");
+//$appliDB->setHobby("Bateaux Voile");
 $Hobbys = $appliDB->getAllHobby();
 foreach($Hobbys as $hobby){//parcour moi chaque element dans le tableau hobbys 
 echo '<input type="checkbox">'.$hobby->type.'</input><br/>';//affiche moi le type de element en cour
@@ -17,11 +17,11 @@ echo '<input type="checkbox">'.$hobby->type.'</input><br/>';//affiche moi le typ
 
 
 //EXERCICE 4
-// $appliDB->setMusique("Slow");
-// $musiques = $appliDB->getAllMusique();
-// foreach($musiques as $musique){//parcour moi chaque element dans le tableau musiques 
-// echo $musique->type;//affiche moi le type de element en cour
-// }
+//$appliDB->setMusique("Slow");
+$musiques = $appliDB->getAllMusique();
+foreach($musiques as $musique){//parcour moi chaque element dans le tableau musiques 
+echo $musique->type;//affiche moi le type de element en cour
+ }
 
 
 //$appliDB->setPersonne('julia', 'maragarita', 'image.png', '1980.04.22', 'Liberal');

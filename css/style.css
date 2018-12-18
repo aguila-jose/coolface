@@ -199,8 +199,8 @@ body{
     border: solid 2px #f73d04;
     box-shadow: -2px 5px 10px #383434;
     background-color: rgb(73, 143, 190);
-    width: 80%;
-    height: 800px;
+    width: 95%;
+    height: 1000px;
     margin: 10px auto;
     display: flex;
    
@@ -259,6 +259,13 @@ body{
     border-bottom: solid 2px rgb(201, 71, 19);
     z-index: 100;
  
+}
+
+
+.donees{
+    padding: 10px;
+    color: rgb(73, 143, 190);
+    font-weight: bold;
 }
 
 .date-status{
@@ -345,7 +352,7 @@ body{
     display: flex;
     justify-content: center;
     margin: 20px auto;
-    width: 90%;
+    width: 95%;
     height: 1000px;;
     box-shadow: -2px 5px 10px #383434;
     border: solid 2px rgb(243, 242, 241);
@@ -355,7 +362,7 @@ body{
     background-color: rgb(73, 143, 190);
     width: 30%;
     padding:50px;
-    margin: 40px;
+    margin: 20px;
     box-shadow: -2px 5px 10px #383434;
     border: solid 2px rgb(243, 242, 241);
 }
@@ -411,7 +418,7 @@ body{
     width: 40%;
     height: 210px;;
     padding:50px;
-    margin: 40px;
+    margin: 20px;
     box-shadow: -2px 5px 10px #383434;
     border: solid 2px rgb(236, 233, 232);
 }
@@ -424,7 +431,7 @@ body{
     width: 40%;
     height: 460px;
     padding:50px;
-    margin: 40px;
+    margin: 20px;
     box-shadow: -2px 5px 10px #383434;
     border: solid 2px rgb(236, 233, 232);
 }
@@ -432,13 +439,14 @@ body{
 
 #container-formulaire5{
     background-color: rgb(73, 143, 190);
-    width: 30%;
-    padding:50px;
-    margin: 40px;
+    width: 95%;
+    margin: 20px;
     box-shadow: -2px 5px 10px #383434;
     border: solid 2px rgb(236, 233, 232);
     display: flex;
     flex-wrap: wrap;
+    overflow-y: scroll;
+    box-sizing: border-box;
 }
 
 .container-list-amis {
@@ -460,7 +468,7 @@ body{
     margin-left: 15px;
     margin-right: 2px;
     width: 200px;
-    height: 300px;
+    height: 320px;
     display: inline-block;
     margin: 20px;
 

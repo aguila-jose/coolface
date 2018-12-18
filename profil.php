@@ -125,12 +125,6 @@
                     <!--:<?php echo $personne->Prenom ?> -->
                 </div>
             </div>
-        </div>
-        <!--Fin de donnees perso-->
-        <!--Amis N° 1-->
-       <!-- <div class="mes-amis-profil">
-            <h3>Mes Amis</h3>
-        </div>-->
 
             <article class="container-list-amis3">
                 <div id="image-amis" class="flex-item2">
@@ -142,44 +136,22 @@
                     <div class="donees">PRENOM : </div>
                 </div>
 
-                <form action="/action_page.php">
-                    <select name="cars">
-                        <option value="volvo">Famille</option>
-                        <option value="saab">Amis</option>
-                        <option value="mercedes">Collegue</option>
-                        <option value="audi">je veux le/a connaitre</option>
-                    </select>
-                </form>
+
             </article>
 
 
             <article class="container-list-amis3">
-                    <div id="image-amis" class="flex-item2">
-                        <img src="imgs/amis1.png" />
-                    </div>
-    
-                    <div>
-                        <div class="donees">NOM : </div>
-                        <div class="donees">PRENOM : </div>
-                    </div>
-    
-                    <form action="/action_page.php">
-                        <select name="cars">
-                            <option value="volvo">Famille</option>
-                            <option value="saab">Amis</option>
-                            <option value="mercedes">Collegue</option>
-                            <option value="audi">je veux le/a connaitre</option>
-                        </select>
-                    </form>
-                </article>
-       
+                <div id="image-amis" class="flex-item2">
+                    <img src="imgs/amis1.png" />
+                </div>
+
+                <div>
+                    <div class="donees">NOM : </div>
+                    <div class="donees">PRENOM : </div>
+                </div>
 
 
-
-
-
-
-
+            </article>
 
 
 

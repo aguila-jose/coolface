@@ -33,9 +33,11 @@ class Connexion{
         $requete_prepare->execute(array('misHobby'=>$nouveauHobby));
     
     }
+
     public function getPersonneHobbyById($id){
         $requete_prepare = $this->connection->prepare("SELECT ");
     }
+    
     public function getAllHobby(){
         $requete_prepare = $this->connection->prepare("SELECT type FROM Hobby");
         $requete_prepare->execute();
