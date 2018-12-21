@@ -24,7 +24,7 @@ echo $musique->type;//affiche moi le type de element en cour
  }
 
 
-//$appliDB->setPersonne('julia', 'maragarita', 'image.png', '1980.04.22', 'Liberal');
+//$appliDB->setPersonne('Rodens', 'Le macho', 'http://www.jacobzflores.com/wp-content/uploads/2011/09/Gay_Bear_Mechanic.jpg', '1980.04.22', 'Bisss');
 
 /* $personnes = $appliDB->getAllPersonne();
 foreach($personnes as $personne){

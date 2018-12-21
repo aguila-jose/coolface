@@ -32,7 +32,7 @@
     ?>-->
       <nav rol="navigation">
         <div id="menu-secondaire">
-            <a href="index.html">FACECOOL</a>
+        <a href="profil.php">FACECOOL INSCRIPTION</a>
             <form method="GET" action="annuaire.php">
                 <div>
                     <input type="search" id="search" name="recherche" placeholder="Trouver vos amis">
@@ -44,8 +44,8 @@
         <ul class="menu">
             <!--<li><a href="#">FACECOOL</a></li>-->
             <!--<li><a href="#">ANNUAIRE</a></li>-->
-            <li><a href="creerprofil.html">CREER NOUVEAUX PROFIL</a></li>
-            <li><a href="annuaire.html">LIST DES AMIS ANNUAIRE</a></li>
+            <li><a href="creerprofil.php">CREER NOUVEAUX PROFIL</a></li>
+            <li><a href="annuaire.php">LISTE DES AMIS ANNUAIRE</a></li>
         </ul>
     </nav>
     <div id="container-principal">
@@ -62,8 +62,8 @@
             echo ' </article>';
         }
         ?>-->
-    <h1>jose aguila</h1>
-        <div id="container-principal">
+   
+        <div id="container-flex-annuaire">
             <article class="container-list-amis">
                      <div id="image-amis" class="flex-item2">
                          <img src="imgs/amis1.png" />
@@ -98,10 +98,19 @@
                          <div class="donees">PRENOM : </div>
                      </div>
                      <button>PROFIL</button>
-                 </article>
-         
-             </div>
-
+             </article>
+             <article class="container-list-amis">
+                     <div id="image-amis" class="flex-item2">
+                         <img src="imgs/amis1.png" />
+                     </div>
+                     <h2>bla bla bla </h2>
+                     <div>
+                         <div class="donees">NOM : </div>
+                         <div class="donees">PRENOM : </div>
+                     </div>
+                     <button>PROFIL</button>
+             </article>
+        </div><!--container-principal-->
     </div>
 
 </body>

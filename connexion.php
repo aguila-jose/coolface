@@ -39,11 +39,25 @@ class Connexion{
     }
     
     public function getAllHobby(){
-        $requete_prepare = $this->connection->prepare("SELECT type FROM Hobby");
+        $requete_prepare = $this->connection->prepare("SELECT * FROM Hobby");
         $requete_prepare->execute();
         $resultatRequete=$requete_prepare->fetchAll(PDO::FETCH_OBJ);//me devuelve un tablero
         return $resultatRequete;
 
+    }
+
+    //Funcion que va recuperar los hobys de la persona
+
+    public function getPersonneHobby($personne_id){
+        $requete_prepare = $this->connection->prepare(
+       "SELECT type 
+       FROM RelationHobby 
+       INNER JOIN Hobby ON Hobby_Id = id
+       WHERE  Personne_Id = :id");
+
+        $requete_prepare->execute(array("id"=>$personne_id));
+        $Hobbys=$requete_prepare->fetchAll(PDO::FETCH_OBJ);
+        return $Hobbys;
     }
 
 
@@ -55,8 +69,34 @@ class Connexion{
     
     }
 
+    public function getPersonneMusique($personne_id){
+        $requete_prepare = $this->connection->prepare(
+            "SELECT type 
+            FROM Musique 
+            INNER JOIN RelationMusique ON musique_id = id
+            WHERE  personne_id = :id");
+
+        $requete_prepare->execute(array("id"=>$personne_id));
+        $musique=$requete_prepare->fetchAll(PDO::FETCH_OBJ);
+        return $musique;
+    }
+
+    //tabla relacion personas amis
+    public function getRelationPersonne($personneId){
+
+        $requete_prepare =$this->connection->prepare(
+        "SELECT * FROM RelationPersonne
+        INNER JOIN Personne ON RelationPersonne.relation_id = Personne.ID
+        WHERE RelationPersonne.personne_id = :id");
+
+        $requete_prepare->execute(array("id"=>$personneId));
+
+        $relation=$requete_prepare->fetchAll(PDO::FETCH_OBJ);
+        return $relation;
+    }
+
     public function getAllMusique(){
-        $requete_prepare = $this->connection->prepare("SELECT type FROM Musique");
+        $requete_prepare = $this->connection->prepare("SELECT * FROM Musique");
         $requete_prepare->execute();
         $resultatRequete=$requete_prepare->fetchAll(PDO::FETCH_OBJ);
         return $resultatRequete;
@@ -70,6 +110,11 @@ class Connexion{
         values(:nom, :prenom, :url_photo, :date_naissance, :status_couple)");
         $requete_prepare->execute(array('nom' => $nom, 'prenom' => $prenom, 'url_photo' => $url_photo,
         'date_naissance'=> $date_naissance, 'status_couple' => $status_couple));
+
+        $id = $this->connection->lastInsertId();
+        return $id;
+
+
     } 
 
     public function getAllPersonne(){
@@ -105,7 +150,50 @@ class Connexion{
         return $resultatPatern;
         
     }  
- 
+    //Inserer des hobiies a des personnes
+    public function insertPersonneHobbies($id_personne, $hobbies){
+        $requete_prepare = $this->connection->prepare(
+            "INSERT INTO RelationHobby(Personne_Id, Hobby_Id) values (:id_personne, :id_hobby)"
+        );
+
+        foreach($hobbies as $hobbie){
+            $requete_prepare->execute(array("id_personne"=>$id_personne, "id_hobby"=>$hobbie ));
+              // var_dump($requete_prepare->errorInfo());
+        }
+        
+    }
+
+        //Inserer des musiques personnes
+        //creer un function est on lui passe en paramettre ($id_personne, $musique)
+        public function insertPersonneMusiques($id_personne, $musiques){
+            //prepare la requete connection
+            $requete_prepare = $this->connection->prepare(
+                //insert dans RelationMusique le id de la personne et le id de la musique 
+                "INSERT INTO RelationMusique(personne_id, musique_id) values(:id_personne, :id_musique)"
+            );
+
+            foreach($musiques as $musique){
+                $requete_prepare->execute(array("id_personne"=>$id_personne, "id_musique"=>$musique));
+               // var_dump($requete_prepare->errorInfo());
+            }
+        }
+
+        // inserer des relations
+
+    public function inserPersonneRelation($id_personne,$id_relation, $relation_type ){
+        $requete_prepare = $this->connection->prepare(
+            "INSERT INTO RelationPersonne (personne_id,relation_id,relation_type) values(:id_personne, :id_relation, :id_type)"
+        );
+      
+            $requete_prepare->execute(array("id_personne"=>$id_personne, "id_relation"=>$id_relation,"id_type"=>$relation_type));
+
+    }
+
+        
+
+
 }
+
+
 ?>
 
