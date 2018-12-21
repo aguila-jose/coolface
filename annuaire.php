@@ -15,9 +15,7 @@
 </head>
 
 <body>
-  
-
-   <!-- <?php
+  <?php
         // recupere coonnexion.php
         require "connexion.php";
 
@@ -29,7 +27,7 @@
             $pattern = $_GET["recherche"];
         }
         $listePersonne = $connexion->getSelectPersonneNomPrenomLike( $pattern);
-    ?>-->
+    ?>
       <nav rol="navigation">
         <div id="menu-secondaire">
         <a href="profil.php">FACECOOL INSCRIPTION</a>
@@ -49,7 +47,7 @@
         </ul>
     </nav>
     <div id="container-principal">
-       <!-- <?php foreach($listePersonne as $personne){
+       <?php foreach($listePersonne as $personne){
             echo '<article class="container-list-amis">';
             echo '<div id="image-amis" class="flex-item2">';
             echo '<img src='.$personne->URL_Photo.' />';
@@ -61,55 +59,24 @@
             echo '<button>PROFIL</button>';
             echo ' </article>';
         }
-        ?>-->
-   
+        ?>
+
         <div id="container-flex-annuaire">
             <article class="container-list-amis">
-                     <div id="image-amis" class="flex-item2">
-                         <img src="imgs/amis1.png" />
-                     </div>
-                     <h2>bla bla bla</h2>
-                     <div>
-                         <div class="donees">NOM : </div>
-                         <div class="donees">PRENOM : </div>
-                     </div>
-                     <button>PROFIL</button>
-                 </article>
+                <div id="image-amis" class="flex-item2">
+                    <img src="imgs/amis1.png" />
+                </div>
+                <h2>bla bla bla</h2>
+                <div>
+                    <div class="donees">NOM : </div>
+                    <div class="donees">PRENOM : </div>
+                </div>
+                <button>PROFIL</button>
+            </article>
+    
+           
          
-                 <article class="container-list-amis">
-                    <div id="image-amis" class="flex-item2">
-                        <img src="imgs/amis1.png" />
-                    </div>
-                    <h2>bla bla </h2>
-                    <div>
-                        <div class="donees">NOM : </div>
-                        <div class="donees">PRENOM : </div>
-                    </div>
-                    <button>PROFIL</button>
-                </article>
-         
-           <article class="container-list-amis">
-                     <div id="image-amis" class="flex-item2">
-                         <img src="imgs/amis1.png" />
-                     </div>
-                     <h2>bla bla bla </h2>
-                     <div>
-                         <div class="donees">NOM : </div>
-                         <div class="donees">PRENOM : </div>
-                     </div>
-                     <button>PROFIL</button>
-             </article>
-             <article class="container-list-amis">
-                     <div id="image-amis" class="flex-item2">
-                         <img src="imgs/amis1.png" />
-                     </div>
-                     <h2>bla bla bla </h2>
-                     <div>
-                         <div class="donees">NOM : </div>
-                         <div class="donees">PRENOM : </div>
-                     </div>
-                     <button>PROFIL</button>
-             </article>
+          
         </div><!--container-principal-->
     </div>
 

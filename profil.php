@@ -1,11 +1,9 @@
 ﻿<!--
-
    <?php
     require ('connexion.php');
 
         // recupere coonnexion.php
-            
-    //TEST
+
             // Je cree ma connexion
             $appliDB = new Connexion();
 
@@ -16,22 +14,19 @@
             }
 
         $recupereAffiche = $appliDB->selectPersonneById($id);
-
     ?>-->
-
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>facecool</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="javascript/javascript.js"></script>
-    <script src="javascript/jquery-1.6.3.min.js"></script>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>facecool</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="javascript/javascript.js"></script>
+        <script src="javascript/jquery-1.6.3.min.js"></script>
+    </head>
 
 <body>
     <nav>
@@ -44,15 +39,12 @@
                 <button>search</button>
             </form>
         </div>
-        <!--<div id="toggle-menu">Menu</div>-->
         <ul class="menu">
             <li><a href="creerprofil.php">CREER NOUVEAUX PROFIL</a></li>
             <li><a href="annuaire.php">LISTE DES AMIS ANNUAIRE</a></li>
         </ul>
     </nav>
-
     <section class="container-profil">
-
         <div class="bck-img">
             <div class="container-img">
                 <img src="<?php echo $recupereAffiche->URL_Photo;?>" alt="">
@@ -74,7 +66,6 @@
                 <?php echo $recupereAffiche->Status_couple ?>
             </div>
         </div>
-
         <div class="donnes-perso">
             <div class="date-status">
                 <div class="appelle">
@@ -108,7 +99,6 @@
                     </div>';
                 }
                 ?>
-              
                 </div>
             </div>
 
@@ -132,7 +122,6 @@
 
                 </article>
             <?php } ?>
-         
             </div>
         </div>
     </section>

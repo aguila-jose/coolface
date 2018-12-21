@@ -202,7 +202,7 @@ body{
     box-shadow: -2px 5px 10px #383434;
     background-color: rgb(73, 143, 190);
     width: 88%;
-    height: 845px;
+    height: 2000px;
     margin: 10px auto;
     display: flex;
    
@@ -337,8 +337,8 @@ body{
     border-bottom: solid 2px rgb(201, 71, 19);
     margin-left: 15px;
     margin-right: 2px;
-    width: 200px;
-    height: 235px;
+    width: 310px;
+    height: 320px;
     display: inline-block;
     margin: 10px;
 }

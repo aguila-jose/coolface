@@ -6,15 +6,13 @@ require ('connexion.php');
 
 // Je crée mon objet connexion
 $appliDB = new Connexion();
-
+/*
 //EXERCICE 3
-
 //$appliDB->setHobby("Bateaux Voile");
 $Hobbys = $appliDB->getAllHobby();
 foreach($Hobbys as $hobby){//parcour moi chaque element dans le tableau hobbys 
 echo '<input type="checkbox">'.$hobby->type.'</input><br/>';//affiche moi le type de element en cour
  }; 
-
 
 //EXERCICE 4
 //$appliDB->setMusique("Slow");
@@ -23,9 +21,7 @@ foreach($musiques as $musique){//parcour moi chaque element dans le tableau musi
 echo $musique->type;//affiche moi le type de element en cour
  }
 
-
 //$appliDB->setPersonne('Rodens', 'Le macho', 'http://www.jacobzflores.com/wp-content/uploads/2011/09/Gay_Bear_Mechanic.jpg', '1980.04.22', 'Bisss');
-
 /* $personnes = $appliDB->getAllPersonne();
 foreach($personnes as $personne){
 echo '<input type="checkbox">'.$personne->Nom ." ".$personne->Prenom." "
@@ -43,16 +39,7 @@ $personne = $appliDB->selectPersonneById(1);
 echo '<input type="checkbox">'.$personne->Nom ." ".$personne->Prenom.'</input><br/>'; 
 ?>
 
-
-*/
-
 require ('connexion.php');
-
-
 $appliDB = new Connexion();
-
-var_dump($appliDB->selectPersonneById(1));
-
-
-
+var_dump($appliDB->selectPersonneById(1));*/
 ?>
